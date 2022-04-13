@@ -1,0 +1,287 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Roboto:wght@100&display=swap');
+
+
+
+body {
+	font-size: 15px;
+	color: #333;
+	line-height: 1.6;
+
+/*Container */
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Intro */
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background: url('asus-rog-eye-oboi-3840x2160_54.jpg') center no-repeat;
+	background-size: cover;
+}
+.intro_inner {
+	width: 100%;
+   max-width: 880px;
+   margin: 0 auto;
+   text-align: center;
+}
+.intro_title {
+	font-size: 120px;
+	font-weight: bolder;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 140px;
+	font-family: 'Montserrat', sans-serif;
+}
+.intro_title:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #fff;
+	margin: 50px auto 50px;
+}
+.intro_suptitle {
+	font-size: 72px;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+}
+.intro_btn {
+	display: inline-block;
+	vertical-align: top;
+	border: 3px  solid #fff;
+	padding: 13px 30px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700px;
+}
+.intro_btn:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+
+/* Header */
+
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding-top: 20px;
+	position: fixed;
+	background-color: black;
+}
+.header_inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header_logo {
+	font-size: 50px;
+	font-weight: 700px;
+	color: #fff;
+}
+
+ 
+ /* Nav */
+
+.header_nav {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-left: 400px;
+
+}
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px;
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.2s linear;
+	position: relative;
+}
+.nav_link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: red;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+.nav_link:hover {
+	color: red;
+}
+.nav_link:hover:after {
+	display: block;
+}	
+
+
+/* Slider */
+
+.slider {
+	width: 100%;
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	
+}
+.slider_inner {
+	display: flex;
+	justify-content: space-between;
+}
+.slider_item {
+	width: 23%;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 20px 0;
+	border-top: 3px solid #fff;
+	opacity: 0.7;
+	position: relative;
+}
+.slider_item.active {
+   opacity: 1;
+}
+.slider_item.active:before {
+	content: "";
+	display: block;
+	width: 70px;
+	height: 3px;
+	position: absolute;
+	top: -3px;
+	left: 0;
+	z-index: 1;
+	background-color: red;
+}
+.slider_span {
+	font-size: 24px;
+	font-weight: 700px;
+}
+
+
+/* Section */
+
+.section {
+	padding: 80px 0;
+	background-color: gray;
+}
+
+
+.section_header {
+	margin: 0 auto 50px;
+	width: 100%;
+	max-width: 950px;
+	text-align: center;
+}
+.section_suptitle {
+	font-size: 24px;
+	font-family: 'Kaushan Script', cursive;
+	color: #333333;
+	padding-bottom: 10px;
+}
+.section_title {
+	font-size: 30px;
+	color: #333333;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+}
+.section_title:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: red;
+	margin: 30px auto 30px;
+}
+.section_text {
+   font-size: 30px;
+   font-weight: 700px;
+   font-family: Roboto, sans-serif;
+   color: black;
+}
+.section_body {
+	max-width: 1220px;
+	margin: 0 auto ;
+	padding-bottom: 50px;
+}
+.section_row {
+	display: flex;
+		justify-content: space-between;
+}
+.section_image {
+	flex: 0 1 33.333%;
+	display: flex;
+	position: relative;
+}
+.section_item  {
+	padding-right: 30px;
+	padding-top: 50px;
+}
+ /* STATISTICS */
+
+ 
+ .statistics {
+background-color: black;
+ }
+ .stat {
+ 	display: flex;
+ }
+ .stat_item {
+ 	flex: 1 1 auto;
+ 	border-left: 1px solid  red;
+ 	text-align: center;
+ 	color: #fff;
+ 	padding: 70px 25px;
+ }
+ .stat_item:last-child {
+ 	border-right: 1px solid  red;
+ }
+ .stat_count {
+ 	font-size: 72px;
+ 	font-weight: 700;
+ 	line-height: 1;
+ }
+ .stat_text {
+ 	font-size: 14px;
+ 	text-transform: uppercase;
+ 	font-weight: 700;
+ }
+
+
+
